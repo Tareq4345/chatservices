@@ -1,4 +1,4 @@
-import 'package:chatapp/auth/auth_service.dart';
+import 'package:chatapp/services/auth/auth_service.dart';
 import 'package:chatapp/components/custom_button.dart';
 import 'package:chatapp/components/custom_textfield.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +28,7 @@ class RegisterPage extends StatelessWidget {
     } else {
       showDialog(
         context: context,
-        builder: (context) => AlertDialog(
+        builder: (context) => const AlertDialog(
           title:  Text("password don't match"),
         ),
       );
